@@ -1,6 +1,6 @@
 window._vwo_code ||
   (function () {
-    var account_id = accountId, // replace 1 with ${accountId} in release string
+    var account_id = 8000025, // replace 1 with ${accountId} in release string
       version = 2.1,
       settings_tolerance = 2000,
       hide_element = "body",
