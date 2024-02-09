@@ -48,17 +48,16 @@
       }
     </style>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-      <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      const params = new URLSearchParams(window.location.search);
-      const accId = parseInt(params.get("id"));
-      const accountId = accId || 718603;
-      console.log("Account-Id ->", accountId);
-      /* eslint-disable no-undef */
-      window._vwo_code ||
+<script>
+            document.addEventListener("DOMContentLoaded", function () {
+              setTimeout(function () {
+
+                var vwoScript = document.createElement("script");
+      
+                vwoScript.innerText = `
+                         window._vwo_code ||
         (function() {
-          var account_id = accountId, // replace 1 with ${accountId} in release string
+          var account_id = 743063, // replace 1 with ${accountId} in release string
             version = 2.1,
             settings_tolerance = 2000,
             hide_element = 'body',
@@ -187,14 +186,13 @@
           w._vwo_code = code;
           code.init()
         })();
-      window._vwo_pc_custom = {
-        a: 100,
-        t: 100
-      };
-    }, 2000); 
-  });
-</script>
-
+                  `;
+                  vwoScript.nonce="281b857c00a2ebdaec3d86964b9acb533e1f022878afb8c2041d3f2223351a28"
+                  vwoScript.id = "vwoCode";
+                document.head.appendChild(vwoScript);
+              }, 2000);
+            });
+          </script>
 
   </head>
 <body>
